@@ -1,10 +1,20 @@
 body{
-    margin: 0;
-    padding: 0;
+    
 }
 
-.container{
+main{
+    display: flex;
+}
+
+.form{
     background: blue ;
     color: white;
     border-radius: black solid 5px;
+    margin-top: 5px;
+    align-items: center;
 }
+
+
+
+
+    
