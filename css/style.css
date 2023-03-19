@@ -1,20 +1,16 @@
-body{
-    
-}
-
-main{
-    display: flex;
-}
-
 .form{
-    background: blue ;
-    color: white;
-    border-radius: black solid 5px;
-    margin-top: 5px;
-    align-items: center;
+    background: #11114e;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 29%;
+    margin-right: 29%;
+    border-radius: 10px;
+}
+
+.form .container_protocoll{
+    margin-left: 0,1%;
+    margin-right: 1%;
+
 }
 
 
-
-
-    
