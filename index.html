@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Rastreamento_correios</title>
-</head>
-<body>
-    <mai>  
-            <div class="form">
-                <h2>Procurando seu diploma!!!</h2>
-                <div class="container_protocoll">
-                    <label for="input_protocoll">Digite o número de rastreio:</label>
-                    <input type="text" placeholder="Ex: TE007302221BR" id="input_protocoll">
-                    <button type="button" id="button_protocoll">Buscar</button>            
-                </div>    
-            
-                <div class="status_seach">
-                    <span>Data</span>              
-                    <p id="dataEvento">00/00/0000</p>
-                    <span>Hora</span>              
-                    <p id="horaEvento">00:00</p>
-                    <span>Local</span>              
-                    <p id="local">Cidade</p>
-                    <span>Status</span>              
-                    <p id="eventoMensagem">Mensagem</p>
-                </div>
-            </div>
-        
-        
-        
+    <title>Rastreamento Correios</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <div class="form">
+        <h2>Consulte seu produto</h2>
+        <div class="container-protocoll">
+          <label for="input-protocoll">Digite o número de rastreio:</label>
+          <input type="text" placeholder="Ex: TE007302221BR" id="input-protocoll">
+          <button type="button" id="button-protocoll">Buscar</button>            
+        </div>    
 
+        <div id="status-search" class="hide">
+          <h3>Status de rastreamento:</h3>
+          <ul class="elements-form">
+            <li><strong>Data:</strong> <span id="data-evento">00/00/0000</span></li>
+            <li><strong>Hora:</strong> <span id="hora-evento">00:00</span></li>
+            <li><strong>Local:</strong> <span id="local-evento">Cidade</span></li>
+            <li><strong>Status:</strong> <span id="evento-mensagem">Mensagem</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
-    </mai>
-    <script src="Js/script.js"></script>
-
-</body>
+    <script src="js/script.js" defer></script>
+    
+  </body>
 </html>

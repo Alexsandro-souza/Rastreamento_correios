@@ -1,10 +1,11 @@
 /*Links com o HTML*/
-const protocolo = document.getElementById('input_protocoll');
-const botao = document.getElementById('button_protocoll');
-const dataEvento = document.getElementById('dataEvento');
-const horaEvento = document.getElementById('horaEvento');
-const local = document.getElementById('local');
-const eventoMensagem = document.getElementById('eventoMensagem');
+const protocolo = document.getElementById('input-protocoll');
+const botao = document.getElementById('button-protocoll');
+const dataEvento = document.getElementById('data-evento');
+const horaEvento = document.getElementById('hora-evento');
+const local = document.getElementById('local-evento');
+const eventoMensagem = document.getElementById('evento-mensagem');
+const elementoStatus = document.getElementById('status-search');
 
 //Evento de click
 const clicando = botao.addEventListener("click", (e) => {
@@ -32,6 +33,7 @@ const getData = async () => {
     horaEvento.innerText = hora
     local.innerText = local1
     eventoMensagem.innerText = status
+    elementoStatus.classList.remove('hide');
 
  };
 
