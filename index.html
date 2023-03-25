@@ -9,36 +9,38 @@
   </head>
   <body>
     
-    <header>
-      <nav class="nav-bar">
+     <nav class="nav-bar">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Sobre o projeto</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main>
-      <div class="form">
-        <h2>Consulte seu produto</h2>
-        <div class="container-protocoll">
-          <label for="input-protocoll">Digite o número de rastreio:</label>
-          <input type="text" placeholder="Ex: TE007302221BR" id="input-protocoll">
-          <button type="button" id="button-protocoll">Buscar</button>            
-        </div>    
-
-        <div id="status-search" class="hide">
-          <h3>Status de rastreamento:</h3>
-          <ul class="elements-form">
-            <li><strong>Data:</strong> <span id="data-evento">00/00/0000</span></li>
-            <li><strong>Hora:</strong> <span id="hora-evento">00:00</span></li>
-            <li><strong>Local:</strong> <span id="local-evento">Cidade</span></li>
-            <li><strong>Status:</strong> <span id="evento-mensagem">Mensagem</span></li>
-          </ul>
+    
+    <div class="form">
+        <div class="form1">
+          <h2>Consulte seu produto</h2>
+          <div class="container-protocoll">
+            <label for="input-protocoll">Digite o número de rastreio</label>
+          </div> 
+            <input type="text" placeholder="Ex: TE007302221BR" id="input-protocoll">
+            <button type="button" id="button-protocoll">Buscar</button>            
+             
         </div>
-      </div>
-    </main>
+        
+        <div class="form2">
+          <div id="status-search">
+            <h3>Status de rastreamento</h3>
+            <ul class="elements-form">
+              <li><strong>Data:</strong> <span id="data-evento">00/00/0000</span></li>
+              <li><strong>Hora:</strong> <span id="hora-evento">00:00</span></li>
+              <li><strong>Local:</strong> <span id="local-evento">Cidade</span></li>
+              <li><strong>Status:</strong> <span id="evento-mensagem">Mensagem</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+  
 
     <script src="js/script.js" defer></script>
     

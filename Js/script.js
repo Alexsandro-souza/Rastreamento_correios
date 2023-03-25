@@ -5,12 +5,13 @@ const dataEvento = document.getElementById('data-evento');
 const horaEvento = document.getElementById('hora-evento');
 const local = document.getElementById('local-evento');
 const eventoMensagem = document.getElementById('evento-mensagem');
-const elementoStatus = document.getElementById('status-search');
+const elementoStatus = document.getElementsByClassName('form2')[0];
 
 //Evento de click
 const clicando = botao.addEventListener("click", (e) => {
     e.preventDefault(); //  Empede que o evento padrão ocorra, no caso traria todo o form
-    getData();
+    elementoStatus.classList.remove('form2');
+    /*getData();*/
 });
 
 //Concatenando protoloca com URL correios
@@ -20,9 +21,9 @@ const getData = async () => {
    const resposta = await fetch(apiURL);
    const data = await resposta.json();   
    alterarHtml(data);
-   return data;
-      
+   return data;      
 }
+
 //Alterando dados na HTML
  function alterarHtml(data) {
     const dia = data.eventos[0].data;
@@ -33,7 +34,7 @@ const getData = async () => {
     horaEvento.innerText = hora
     local.innerText = local1
     eventoMensagem.innerText = status
-    elementoStatus.classList.remove('hide');
+    
 
  };
 
