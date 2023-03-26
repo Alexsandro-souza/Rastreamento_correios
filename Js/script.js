@@ -5,13 +5,12 @@ const dataEvento = document.getElementById('data-evento');
 const horaEvento = document.getElementById('hora-evento');
 const local = document.getElementById('local-evento');
 const eventoMensagem = document.getElementById('evento-mensagem');
-const elementoStatus = document.getElementsByClassName('form2')[0];
+const elementoStatus = document.getElementById('form-hide');
 
 //Evento de click
 const clicando = botao.addEventListener("click", (e) => {
-    e.preventDefault(); //  Empede que o evento padrão ocorra, no caso traria todo o form
-    elementoStatus.classList.remove('form2');
-    /*getData();*/
+    e.preventDefault(); //  Empede que o evento padrão ocorra, no caso traria todo o form      
+    getData();
 });
 
 //Concatenando protoloca com URL correios
@@ -34,7 +33,7 @@ const getData = async () => {
     horaEvento.innerText = hora
     local.innerText = local1
     eventoMensagem.innerText = status
-    
+    elementoStatus.classList.remove('hide');    
 
  };
 
