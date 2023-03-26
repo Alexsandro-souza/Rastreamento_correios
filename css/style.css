@@ -1,11 +1,17 @@
 /*Corpo da aplicação*/
-
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: rgb(64, 156, 61);
+    background: linear-gradient(to top, rgba(255, 194, 25, 0.5), rgb(241, 241, 20));
+    justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 /*Formularios divs*/
@@ -14,7 +20,6 @@ body{
     min-width: auto;
     max-width: 30%;   
     margin: 0 auto;
-    
     
 }
 
@@ -58,7 +63,7 @@ input::placeholder{
 input{
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 50%;
     margin-top: 5px;
 }
 
@@ -75,6 +80,7 @@ button{
 }
 .form2 #status-search .elements-form li {
     list-style-type: none;
+    
     padding-bottom: 1px;
     display: flex;
     
@@ -96,14 +102,23 @@ button{
 /*Barra de menu superior*/
   .nav-bar ul li{
     display: inline-block;
-    padding: 4px;
+    padding: 10px;
+    margin-top: 14px;
+    
 }
 
 .nav-bar ul li a{
-    color: black;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+    
+    
     
 }
 
 .nav-bar{
-    background: #fff;
+    background: #131212;
+    height: 50px;
+    margin-bottom: 50px;
 }
