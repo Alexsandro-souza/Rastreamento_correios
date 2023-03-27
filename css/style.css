@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to top, rgba(255, 194, 25, 0.5), rgb(241, 241, 20));
+    background: linear-gradient(to top, rgba(48, 49, 49, 0.5), rgba(2, 57, 75, 1) );
     justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
     color: black;

@@ -16,7 +16,7 @@ const clicando = botao.addEventListener("click", (e) => {
 //Concatenando protoloca com URL correios
 const getData = async () => {
    const valorProtoloco = protocolo.value.toUpperCase(); //O metedo toUpperCase() transforma em mauiscula toda string    
-   const apiURL = `https://api.linketrack.com/track/json?user=teste&token=1abcd00b2731640e886fb41a8a9671ad1434c599dbaa0a0de9a5aa619f29a83f&codigo=${valorProtoloco}`;
+   const apiURL = `https://api.linketrack.com/track/json?user=alexsandrosouzasilva68@gmail.com&token=e61adcaf1180a0a04b7ef3f5c86310760b018fc30a0d356eeab8c4fa49ec1306&codigo=${valorProtoloco}`;
    const resposta = await fetch(apiURL);
    const data = await resposta.json();   
    alterarHtml(data);
